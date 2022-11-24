@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Cards from './components/cards/Cards';
+//import Decomposition from './components/decomposition/Decomposition';
 
 function App() {
+  
+  const cards_data = {
+    title: 'Special title treatment',
+    text: 'With supporting text below as a natural lead-in to additional content.',
+    href: 'http://localhost:3000'
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <Cards {...cards_data} >
+        <img src="..." class="card-img-top" alt="..." />
+      </Cards>
+
+      {/*
+      <Cards {...cards_data} >
+        <img src="..." class="card-img-top" alt="..." />
+      </Cards>
+      */}
+      {/*<Decomposition />*/}
     </div>
   );
 }

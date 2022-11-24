@@ -1,0 +1,12 @@
+div .inline {
+  display: inline-block;
+}
+
+div div {
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+div {
+  border: 1px solid gray;
+}
